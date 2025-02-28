@@ -1,0 +1,81 @@
+.footer {
+	padding-top: 50px;
+	background-color: var(--dark-primary);
+}
+
+.footer__top {
+	border-bottom: 1px solid var(--primary);
+	padding-bottom: 48px;
+}
+
+.footer__column {
+	grid-column: 2 span;
+}
+
+.footer__column--big {
+	grid-column: 6 span;
+}
+
+.footer__title {
+	font-family: var(--second-family);
+	margin: 0;
+	margin-bottom: 12px;
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--white);
+}
+
+.footer__list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.footer__link {
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--white);
+}
+
+.footer__form .form__input {
+	flex-grow: 1;
+	color: var(--white);
+	background: rgba(255, 255, 255, 0.15);
+}
+
+.footer__form .form__input::placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px 0;
+}
+
+.footer__copyright {
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--white);
+}
+
+.footer_link:focus {
+	outline: none;
+}
+
+.footer__link:focus-visible {
+	outline: 2px dashed var(--white);
+	outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover) {
+	.footer__link:hover {
+		color: var(--primary);
+	}
+}
+
+.footer__link:active {
+	color: var(--border-dark);
+}

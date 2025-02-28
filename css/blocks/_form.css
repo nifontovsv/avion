@@ -1,0 +1,26 @@
+.form {
+	display: flex;
+	align-items: center;
+}
+
+.form__input {
+	border: none;
+	padding-left: 32px;
+	padding-right: 20px;
+	width: 354px;
+	height: 56px;
+	background: var(--light-grey);
+}
+
+.form__input::placeholder {
+	color: rgba(42, 37, 75, 0.2);
+}
+
+.form__input:focus {
+	outline: none;
+}
+
+.form__input:focus-visible {
+	outline: 2px dashed var(--primary);
+	outline-offset: var(--outline-offset);
+}
